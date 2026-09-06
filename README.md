@@ -1,5 +1,6 @@
 # DevOps Books
 
+> [Mermaid Diagram Documentation](https://mermaid.ai/open-source/intro/getting-started.html)
 
 ```mermaid
 graph TD;
