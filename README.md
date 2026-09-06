@@ -36,14 +36,13 @@ flowchart LR
 ```mermaid
 ---
 config:
-  layout: elk
-  elk:
-    mergeEdges: true
-    nodePlacementStrategy: LINEAR_SEGMENTS
-    nodePlacementAlignment: NONE
+  architecture:
+    idealEdgeLengthMultiplier: 3
 ---
-flowchart LR
-  A[Start] --> B{Choose Path}
-  B -->|Option 1| C[Path 1]
-  B -->|Option 2| D[Path 2]
+architecture-beta
+    service a(server)[A]
+    service b(server)[B]
+    service c(server)[C]
+    a:R --> L:b
+    b:R --> L:c
 ```
